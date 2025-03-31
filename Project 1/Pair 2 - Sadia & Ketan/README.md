@@ -6,3 +6,5 @@ Case 4) you create 2 joins that allow you to get the name, job title, and employ
 Case 5) you create an intersection between the purchase order IDs in purchase orders and purchase order lines. Then from that intersection we exclude any order that has been finalized.
 Case 6) you create a join so that we can get the state name and the person's address. Then we put the affected area into the where clause to get the addresses of those affected.
 Case 7) you create a table that we use in our where clause. the table intersects employees and job candidates to see who got hired. then we just get their names. 
+
+Medium:https://medium.com/my-games-company/a-game-dev-recruiter-shares-how-to-prepare-for-an-hr-interview-8468f2c2916e
