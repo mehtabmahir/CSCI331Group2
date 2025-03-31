@@ -1,3 +1,5 @@
+[Link to Pair Video)(https://drive.google.com/file/d/13fkKL1OWlx0Eo1uyk20AC8h_Nkjrl_N_/view?usp=sharing)
+
 ### SADIA SHARMIN'S CASES:
 
 Case 1) Used joins to combine the invoices, customers, cities, and state provinces tables. Then, extracted any row that did not have a confirmed delivery time to see similarities and differences between the orders.
