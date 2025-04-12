@@ -25,50 +25,60 @@
    - `LoadDimCustomer`
    - `LoadDimProduct`
    - `LoadDimTerritory`  
-9. Backup database as `.bak` from WSL
+9. Backup database as `.bak`
 
 ---
 
-### 👤 **Person B**
-1. Create `Process.WorkflowSteps` table  
-2. Create `Process.usp_TrackWorkflow`  
-3. Create stored procedures:
+### 👤 **Person B: Sadia Sharmin**
+1. Restore database from `.bak`
+2. Create `Process.WorkflowSteps` table  
+3. Create `Process.usp_TrackWorkflow`  
+4. Create stored procedures:
    - `LoadDimOccupation`
    - `LoadDimProductCategory`
    - `LoadDimProductSubcategory`  
-4. Add tracking logic using `usp_TrackWorkflow`
+5. Add tracking logic using `usp_TrackWorkflow`
+6. Backup database as `.bak`
 
 ---
 
 ## 🟩 **Pair 2 – Fact Table and Data Integration**
 
 ### Person A
-1. Create stored procedure `LoadFactData`  
-2. Join all dimension tables to load surrogate keys  
-3. Insert into `Fact.Data` using sequences  
-4. Include workflow tracking logic
+1. Restore database from `.bak`
+2. Create stored procedure `LoadFactData`  
+3. Join all dimension tables to load surrogate keys  
+4. Insert into `Fact.Data` using sequences  
+5. Include workflow tracking logic
+6. Backup database as `.bak`
 
 ### Person B
-5. Test data integrity and FK joins  
-6. Validate row counts before and after  
-7. Help with `.bak` backup for this phase
+1. Restore database from `.bak`
+2. Test data integrity and FK joins  
+3. Validate row counts before and after  
+4. Help with `.bak` backup for this phase
+5. Backup database as `.bak`
 
 ---
 
 ## 🟥 **Pair 3 – Orchestration and Workflow Execution**
 
 ### Person A
-1. Create stored procedure `LoadStarSchemaData`  
-2. Add logic to:
+1. Restore database from `.bak`
+2. Create stored procedure `LoadStarSchemaData`  
+3. Add logic to:
    - Drop foreign keys
    - Truncate all star schema tables
    - Call all `LoadDim*` and `LoadFactData` procedures  
-3. Recreate foreign keys at the end
+4. Recreate foreign keys at the end
+5. Backup database as `.bak`
 
 ### Person B
-4. Create stored procedure `usp_ShowWorkflowSteps`  
-5. Validate row count and log entries  
-6. Test foreign key integrity and schema relationships
+1. Restore database from `.bak`
+2. Create stored procedure `usp_ShowWorkflowSteps`  
+3. Validate row count and log entries  
+4. Test foreign key integrity and schema relationships
+5. Backup database as `.bak`
 
 ---
 
@@ -86,15 +96,15 @@
    - Output verification in SSMS
 
 ### Person B
-4. Generate Redgate SQLDoc PDF from final database  
-5. Organize final project structure:
+1. Generate Redgate SQLDoc PDF from final database  
+2. Organize final project structure:
    ```
    /SQL/
    /Docs/
    /Media/
    /Backup/
    ```
-6. Package everything into a `.vhdx` named:
+3. Package everything into a `.vhdx` named:
    ```
    G10_2_Spring2025_0915.vhdx
    ```
